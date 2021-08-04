@@ -5,7 +5,7 @@ import { JumbotronContainer } from "../containers/jumbotron";
 import { FooterContainer } from "../containers/footer";
 import { HeaderContainer } from "../containers/header";
 
-const Home = () => {
+export default function Home() {
   return (
     <>
       <HeaderContainer>
@@ -31,6 +31,4 @@ const Home = () => {
       <FooterContainer />
     </>
   );
-};
-
-export default Home;
+}

@@ -15,8 +15,10 @@ const config = {
   appId: "1:61399508249:web:85af5d6b5429f3131c9188",
 };
 
+const firebase = window.firebase.initializeApp(config);
+
+
 //run only once to seed firestore database
-// const firebase = window.firebase.initializeApp(config);
 // seedDatabase(firebase)
 
 ReactDOM.render(

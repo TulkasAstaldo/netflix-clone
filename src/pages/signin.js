@@ -24,11 +24,10 @@ export default function SignIn() {
       .signInWithEmailAndPassword(emailAddress, password)
       .then(() => {
         history.push(ROUTES.BROWSE);
-        setEmailAdress("");
-        setPassword("");
-        setError("");
       })
       .catch((error) => {
+        setEmailAdress("");
+        setPassword("");
         setError(error.message);
       });
   };

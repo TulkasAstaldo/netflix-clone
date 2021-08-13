@@ -42,13 +42,13 @@ Header.Search = function HeaderSearch({
     <Search {...restProps}>
       <SearchIcon onClick={() => setSearchActive(!searchActive)}>
         <img src="/images/icons/search.png" alt="Search" />
-        <SearchInput
-          value={searchTerm}
-          onChange={({ target }) => setSearchTerm(target.value)}
-          placeholder="Search files and series"
-          active={searchActive}
-        />
       </SearchIcon>
+      <SearchInput
+        value={searchTerm}
+        onChange={({ target }) => setSearchTerm(target.value)}
+        placeholder="Search files and series"
+        active={searchActive}
+      />
     </Search>
   );
 };
